@@ -1,0 +1,9 @@
+localization:
+  onscreens:
+    en-us: btl_addon_ui_localization\localization\en-us.json
+    fr-fr: btl_addon_ui_localization\localization\fr-fr.json
+    de-de: btl_addon_ui_localization\localization\de-de.json
+    zh-cn: btl_addon_ui_localization\localization\zh-cn.json
+    ru-ru: btl_addon_ui_localization\localization\ru-ru.json
+    jp-jp: btl_addon_ui_localization\localization\jp-jp.json
+    kr-kr: btl_addon_ui_localization\localization\kr-kr.json
