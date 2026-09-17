@@ -1,0 +1,133 @@
+Attribute.ReflexesToAttackSpeedWeaponEffector:
+  $type: gamedataApplyStatGroupEffector_Record
+  applicationTarget: Weapon
+  effectorClassName: ApplyStatGroupEffector
+  prereqRecord: Prereqs.AlwaysTruePrereq
+  removeAfterActionCall: False
+  removeAfterPrereqCheck: False
+  removeWithEffector: True
+  statGroup: Attribute.ReflexesToAttackSpeedGroup
+  reapplyOnWeaponChange: True
+
+Attribute.ReflexesToAttackSpeedGroup:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - Attribute.ReflexesToAttackSpeedModifier
+
+Attribute.ReflexesToAttackSpeedModifier:
+  $type: gamedataCurveStatModifier_Record
+  column: reflexes_to_attack_speed
+  id: reflexes_passives
+  refObject: Player
+  refStat: BaseStats.Reflexes
+  modifierType: Multiplier
+  statType: BaseStats.AttackSpeed
+
+Attribute.ReflexesToReloadSpeedWeaponEffector:
+  $type: gamedataApplyStatGroupEffector_Record
+  applicationTarget: Weapon
+  effectorClassName: ApplyStatGroupEffector
+  prereqRecord: Prereqs.AlwaysTruePrereq
+  removeAfterActionCall: False
+  removeAfterPrereqCheck: False
+  removeWithEffector: True
+  statGroup: Attribute.ReflexesToReloadSpeedGroup
+  reapplyOnWeaponChange: True
+
+Attribute.ReflexesToReloadSpeedGroup:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - Attribute.ReflexesToReloadSpeedModifier_inline0
+
+Attribute.ReflexesToReloadSpeedModifier_inline0:
+  $type: gamedataCurveStatModifier_Record
+  column: reflexes_to_reload_speed
+  id: reflexes_passives
+  refObject: Player
+  refStat: BaseStats.Reflexes
+  modifierType: AdditiveMultiplier
+  statType: BaseStats.ReloadTime
+
+Attribute.ReflexesToSwapSpeedEffector:
+  $type: gamedataApplyStatGroupEffector_Record
+  applicationTarget: Weapon
+  effectorClassName: ApplyStatGroupEffector
+  prereqRecord: Prereqs.AlwaysTruePrereq
+  removeAfterActionCall: False
+  removeAfterPrereqCheck: False
+  removeWithEffector: True
+  statGroup: Attribute.ReflexesToSwapSpeedGroup
+  reapplyOnWeaponChange: True
+
+Attribute.ReflexesToSwapSpeedGroup:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - Attribute.ReflexesToSwapSpeedModifier_inline0
+    - Attribute.ReflexesToSwapSpeedModifier_inline1
+
+Attribute.ReflexesToSwapSpeedModifier_inline0:
+  $type: gamedataCurveStatModifier_Record
+  column: reflexes_to_swap_speed
+  id: reflexes_passives
+  refObject: Player
+  refStat: BaseStats.Reflexes
+  modifierType: AdditiveMultiplier
+  statType: BaseStats.EquipDuration
+
+Attribute.ReflexesToSwapSpeedModifier_inline1:
+  $type: gamedataCurveStatModifier_Record
+  column: reflexes_to_swap_speed
+  id: reflexes_passives
+  refObject: Player
+  refStat: BaseStats.Reflexes
+  modifierType: AdditiveMultiplier
+  statType: BaseStats.UnequipDuration
+
+Attribute.ReflexesToMovementSpeed:
+  $type: gamedataCurveStatModifier_Record
+  column: reflexes_to_movement_speed
+  id: reflexes_passives
+  refObject: Self
+  refStat: BaseStats.Reflexes
+  modifierType: AdditiveMultiplier
+  statType: BaseStats.MaxSpeed
+
+Attribute.ReflexesToStamina:
+  $type: gamedataCurveStatModifier_Record
+  column: reflexes_to_stamina
+  id: reflexes_passives
+  refObject: Self
+  refStat: BaseStats.Reflexes
+  modifierType: Additive
+  statType: BaseStats.Stamina
+
+Attribute.ReflexesToCritChance:
+  $type: gamedataCurveStatModifier_Record
+  column: reflexes_to_crit_chance
+  id: reflexes_passives
+  refObject: Self
+  refStat: BaseStats.Reflexes
+  modifierType: Additive
+  statType: BaseStats.CritChance
+  
+Attribute.ReflexesToFallDamageReduction:
+  $type: gamedataCurveStatModifier_Record
+  column: reflexes_to_fall_damage_reduction
+  id: reflexes_passives
+  refObject: Self
+  refStat: BaseStats.Reflexes
+  modifierType: Additive
+  statType: BaseStats.FallDamageReduction
+
+Attribute.AttributePassives:
+  statModifiers:
+    - !append-once Attribute.ReflexesToMovementSpeed
+    - !append-once Attribute.ReflexesToStamina
+    - !append-once Attribute.ReflexesToCritChance
+    - !append-once Attribute.ReflexesToFallDamageReduction
+
+Character.Player_Puppet_Base:
+  effectors:
+    - !append-once Attribute.ReflexesToAttackSpeedWeaponEffector
+    - !append-once Attribute.ReflexesToReloadSpeedWeaponEffector
+    - !append-once Attribute.ReflexesToSwapSpeedEffector

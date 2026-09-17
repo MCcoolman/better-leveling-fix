@@ -1,0 +1,52 @@
+Attribute.BodyToHealthPercent:
+  $type: CurveStatModifier
+  column: body_to_health_percent
+  id: body_passives
+  refObject: Self
+  refStat: BaseStats.Strength
+  modifierType: AdditiveMultiplier
+  statType: BaseStats.Health   
+
+Attribute.BodyToStamina:
+  $type: CurveStatModifier
+  column: body_to_stamina
+  id: body_passives
+  refObject: Self
+  refStat: BaseStats.Strength
+  modifierType: Additive
+  statType: BaseStats.Stamina
+
+Attribute.BodyToMeleeDamagePercentBonus:
+  $type: CurveStatModifier
+  column: body_to_melee_damage_percent_bonus
+  id: body_passives
+  refObject: Self
+  refStat: BaseStats.Strength
+  modifierType: Additive
+  statType: BaseStats.MeleeDamagePercentBonus
+
+Attribute.BodyToCarryCapacity:
+  $type: CurveStatModifier
+  column: body_to_carry_capacity
+  id: body_passives
+  refObject: Self
+  refStat: BaseStats.Strength
+  modifierType: Additive
+  statType: BaseStats.CarryCapacity
+
+Attribute.BodyToStaminaRegenRate:
+  $type: CurveStatModifier
+  column: body_to_stamina_regen_rate
+  id: body_passives
+  refObject: Self
+  refStat: BaseStats.Strength
+  modifierType: Additive
+  statType: BaseStats.StaminaRegenRate
+
+Attribute.AttributePassives:
+  statModifiers:
+    - !append-once Attribute.BodyToHealthPercent
+    - !append-once Attribute.BodyToStamina
+    - !append-once Attribute.BodyToMeleeDamagePercentBonus
+    - !append-once Attribute.BodyToCarryCapacity
+    - !append-once Attribute.BodyToStaminaRegenRate

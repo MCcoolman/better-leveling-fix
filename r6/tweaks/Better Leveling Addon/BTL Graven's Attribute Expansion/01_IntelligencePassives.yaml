@@ -1,0 +1,72 @@
+Attribute.IntelligenceToQuickHackUploadSpeed:
+  $type: gamedataCurveStatModifier_Record
+  column: intelligence_to_upload_speed
+  id: intelligence_passives
+  refObject: Self
+  refStat: BaseStats.Intelligence
+  modifierType: Additive
+  statType: BaseStats.QuickHackUpload
+  
+Attribute.IntelligenceToMemoryRegenRate:
+  $type: gamedataCurveStatModifier_Record
+  column: intelligence_to_memory_regen_rate
+  id: intelligence_passives
+  refObject: Self
+  refStat: BaseStats.Intelligence
+  modifierType: Additive
+  statType: BaseStats.MemoryRegenRate
+  
+Attribute.IntelligenceToQuickhackDamage:
+  $type: gamedataCurveStatModifier_Record
+  column: intelligence_to_quickhack_damage
+  id: intelligence_passives
+  refObject: Self
+  refStat: BaseStats.Intelligence
+  modifierType: Additive
+  statType: BaseStats.BonusQuickHackDamage
+
+Attribute.IntelligenceToQuickhackDamageMultiplier:
+  $type: gamedataCurveStatModifier_Record
+  column: intelligence_to_quickhack_damage
+  id: intelligence_passives
+  refObject: Self
+  refStat: BaseStats.Intelligence
+  modifierType: Additive
+  statType: BaseStats.QuickhackDamageBonusMultiplier
+
+Attribute.IntelligenceToQuickhackResistance:
+  $type: gamedataCurveStatModifier_Record
+  column: intelligence_to_quickhack_resistance
+  id: intelligence_passives
+  refObject: Self
+  refStat: BaseStats.Intelligence
+  modifierType: Additive
+  statType: BaseStats.QuickhackResistance
+
+Attribute.IntelligenceToQuickHackCritChance:
+  $type: gamedataCurveStatModifier_Record
+  column: intelligence_to_quickhack_crit_chance
+  id: intelligence_passives
+  refObject: Self
+  refStat: BaseStats.Intelligence
+  modifierType: Additive
+  statType: BaseStats.QuickHackCritChance
+
+Attribute.IntelligenceToQuickQueueSize:
+  $type: gamedataCurveStatModifier_Record
+  column: intelligence_to_quickhack_queue_size
+  id: intelligence_passives
+  refObject: Self
+  refStat: BaseStats.Intelligence
+  modifierType: Additive
+  statType: BaseStats.QuickHackQueueSize
+
+Attribute.AttributePassives:
+  statModifiers:
+    - !append-once Attribute.IntelligenceToQuickHackUploadSpeed
+    - !append-once Attribute.IntelligenceToMemoryRegenRate
+    - !append-once Attribute.IntelligenceToQuickhackDamage
+    - !append-once Attribute.IntelligenceToQuickhackDamageMultiplier
+    - !append-once Attribute.IntelligenceToQuickhackResistance
+    - !append-once Attribute.IntelligenceToQuickHackCritChance
+    - !append-once Attribute.IntelligenceToQuickQueueSize

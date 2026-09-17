@@ -1,0 +1,53 @@
+Attribute.CoolToVisibilityReduction:
+  $type: gamedataCurveStatModifier_Record
+  column: cool_to_visibility_reduction
+  id: cool_passives
+  refObject: Self
+  refStat: BaseStats.Cool
+  modifierType: Additive
+  statType: BaseStats.VisibilityReduction
+  
+Attribute.CoolToMitigationChance:
+  $type: gamedataCurveStatModifier_Record
+  column: cool_to_mitigation_chance
+  id: cool_passives
+  refObject: Self
+  refStat: BaseStats.Cool
+  modifierType: Additive
+  statType: BaseStats.MitigationChance
+  
+Attribute.CoolToHeadshotDamageMultiplier:
+  $type: gamedataCurveStatModifier_Record
+  column: cool_to_headshot_damage_multiplier
+  id: cool_passives
+  refObject: Self
+  refStat: BaseStats.Cool
+  modifierType: Additive
+  statType: BaseStats.HeadshotDamageMultiplier
+  
+Attribute.CoolToWeakspotDamageMultiplier:
+  $type: gamedataCurveStatModifier_Record
+  column: cool_to_headshot_damage_multiplier
+  id: cool_passives
+  refObject: Self
+  refStat: BaseStats.Cool
+  modifierType: Additive
+  statType: BaseStats.WeakspotDamageMultiplier
+
+Attribute.CoolToStealthHitDamage:
+  $type: gamedataCurveStatModifier_Record
+  column: cool_to_stealth_hit_damage
+  id: cool_passives
+  refObject: Self
+  refStat: BaseStats.Cool
+  modifierType: Additive
+  statType: BaseStats.StealthHitDamageBonus
+
+
+Attribute.AttributePassives:
+  statModifiers:
+    - !append-once Attribute.CoolToVisibilityReduction
+    - !append-once Attribute.CoolToMitigationChance
+    - !append-once Attribute.CoolToHeadshotDamageMultiplier
+    - !append-once Attribute.CoolToWeakspotDamageMultiplier
+    - !append-once Attribute.CoolToStealthHitDamage

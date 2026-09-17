@@ -1,0 +1,19 @@
+BaseStats.Strength:
+  $type: gamedataAttribute_Record
+  localizedDescription: LocKey("BTL_Body_Change_01")
+
+BaseStats.Cool:
+  $type: gamedataAttribute_Record
+  localizedDescription: LocKey("BTL_Cool_Change_01")
+
+BaseStats.Intelligence:
+  $type: gamedataAttribute_Record
+  localizedDescription: LocKey("BTL_Intelligence_Change_01")
+
+BaseStats.Reflexes:
+  $type: gamedataAttribute_Record
+  localizedDescription: LocKey("BTL_Reflexes_Change_01")
+
+BaseStats.TechnicalAbility:
+  $type: gamedataAttribute_Record
+  localizedDescription:  LocKey("BTL_TechnicalAbility_Change_01")

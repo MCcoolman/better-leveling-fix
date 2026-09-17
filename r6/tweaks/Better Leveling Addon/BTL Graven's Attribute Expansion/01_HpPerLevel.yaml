@@ -1,0 +1,49 @@
+BaseStats.HpPerLevelBase:
+  $type: Stat
+  enumName: 'HpPerLevelBase'
+  flags: [ EquipOnPlayer ]
+  
+BaseStats.HpPerLevelCounter:
+  $base: BaseStats.HpPerLevelBase
+  enumName: 'HpPerLevelCounter'
+  max: 500  
+  min: 0
+
+Attribute.HpPerLevelCalculator:
+  $type: ApplyStatGroupEffector
+  applicationTarget: Player
+  statGroup:
+    statModifiers:
+    - $type: CombinedStatModifier
+      statType: BaseStats.HpPerLevelCounter
+      modifierType: Additive
+      refStat: BaseStats.Strength
+      refObject: Player
+      opSymbol: "*"
+      value: 0.25
+    - $type: CombinedStatModifier
+      statType: BaseStats.HpPerLevelCounter
+      modifierType: AdditiveMultiplier
+      refStat: BaseStats.PowerLevel
+      refObject: Player
+      opSymbol: "*"
+      value: 1
+
+Attribute.HpPerLevelApplication:
+  $type: ApplyStatGroupEffector
+  applicationTarget: Player
+  statGroup:
+    statModifiers:
+    - $type: CombinedStatModifier
+      statType: BaseStats.Health
+      modifierType: Additive
+      refStat: BaseStats.HpPerLevelCounter
+      refObject: Player
+      opSymbol: "*"
+      value: 1
+      
+Character.Player_Puppet_Base:
+  effectors:
+    - !append-once Attribute.HpPerLevelCalculator
+    - !append-once Attribute.HpPerLevelApplication
+  

@@ -1,0 +1,82 @@
+Attribute.TechAbilityToArmorPercent:
+  $type: gamedataCurveStatModifier_Record
+  column: tech_ability_to_armor_percent
+  id: tech_ability_passives
+  refObject: Self
+  refStat: BaseStats.TechnicalAbility
+  modifierType: AdditiveMultiplier
+  statType: BaseStats.Armor
+
+Attribute.TechAbilityToArmorBeyond:
+  $type: gamedataCurveStatModifier_Record
+  column: tech_ability_to_armor_beyond
+  id: tech_ability_passives
+  refObject: Self
+  refStat: BaseStats.TechnicalAbility
+  modifierType: Additive
+  statType: BaseStats.Armor 
+  
+Attribute.TechAbilityToHumanity:
+  $type: gamedataCurveStatModifier_Record
+  column: tech_ability_to_humanity
+  id: tech_ability_passives
+  refObject: Self
+  refStat: BaseStats.TechnicalAbility
+  modifierType: Additive
+  statType: BaseStats.Humanity
+  
+Attribute.TechAbilityToCyberwareCDR:
+  $type: gamedataCurveStatModifier_Record
+  column: tech_ability_to_cyberware_cdr
+  id: tech_ability_passives
+  refObject: Self
+  refStat: BaseStats.TechnicalAbility
+  modifierType: AdditiveMultiplier
+  statType: BaseStats.CyberwareCooldownReduction
+
+Attribute.TechAbilityToOpticalCamoRechargeDuration:
+  $type: gamedataCurveStatModifier_Record
+  column: tech_ability_to_opticalcamorechargeduration
+  id: tech_ability_passives
+  refObject: Self
+  refStat: BaseStats.TechnicalAbility
+  modifierType: AdditiveMultiplier
+  statType: BaseStats.OpticalCamoRechargeDuration
+
+Attribute.TechAbilityToSecondaryModifiersAdditiveMultiplier:
+  $type: gamedataCurveStatModifier_Record
+  column: tech_ability_to_secondary_modifiers
+  id: tech_ability_passives
+  refObject: Self
+  refStat: BaseStats.TechnicalAbility
+  modifierType: Additive
+  statType: BaseStats.SecondaryModifiersAdditiveMultiplier
+
+Attribute.TechAbilityToGrenadesMaxCharges:
+  $type: gamedataCurveStatModifier_Record
+  column: tech_ability_to_grenades_max_charges
+  id: tech_ability_passives
+  refObject: Self
+  refStat: BaseStats.TechnicalAbility
+  modifierType: Additive
+  statType: BaseStats.GrenadesMaxCharges
+
+Attribute.TechAbilityToGrenadeExplosionBonusDamage:
+  $type: gamedataCurveStatModifier_Record
+  column: tech_ability_to_grenades_explosion_bonus_damage
+  id: tech_ability_passives
+  refObject: Self
+  refStat: BaseStats.TechnicalAbility
+  modifierType: Additive
+  statType: BaseStats.GrenadeExplosionBonusDamage
+
+Attribute.AttributePassives:
+  statModifiers:
+    - !append-once Attribute.TechAbilityToArmorPercent
+    - !append-once Attribute.TechAbilityToArmorBeyond
+    - !append-once Attribute.TechAbilityToHumanity
+    - !append-once Attribute.TechAbilityToCyberwareCDR
+    - !append-once Attribute.TechAbilityToOpticalCamoRechargeDuration
+    - !append-once Attribute.TechAbilityToSecondaryModifiersAdditiveMultiplier
+    - !append-once Attribute.TechAbilityToGrenadesMaxCharges
+    - !append-once Attribute.TechAbilityToGrenadeExplosionBonusDamage
