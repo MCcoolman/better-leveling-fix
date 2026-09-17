@@ -1,0 +1,9 @@
+localization:
+  onscreens:
+    en-us: btl_gravenaddonlocalization\localization\en-us.json
+    fr-fr: btl_gravenaddonlocalization\localization\fr-fr.json
+    de-de: btl_gravenaddonlocalization\localization\de-de.json
+    kr-kr: btl_gravenaddonlocalization\localization\kr-kr.json
+    jp-jp: btl_gravenaddonlocalization\localization\jp-jp.json
+    ru-ru: btl_gravenaddonlocalization\localization\ru-ru.json
+    zh-cn: btl_gravenaddonlocalization\localization\zh-cn.json
