@@ -1,0 +1,9 @@
+localization:
+  onscreens:
+    en-us: BTL_ProgressSkillAddon\localization\en-us.json
+    fr-fr: BTL_ProgressSkillAddon\localization\fr-fr.json
+    de-de: BTL_ProgressSkillAddon\localization\de-de.json
+    zh-cn: BTL_ProgressSkillAddon\localization\zh-cn.json
+    ru-ru: BTL_ProgressSkillAddon\localization\ru-ru.json
+    kr-kr: BTL_ProgressSkillAddon\localization\kr-kr.json
+    jp-jp: BTL_ProgressSkillAddon\localization\jp-jp.json
