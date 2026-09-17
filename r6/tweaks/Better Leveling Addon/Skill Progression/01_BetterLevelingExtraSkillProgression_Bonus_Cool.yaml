@@ -1,0 +1,29 @@
+BTL.CoolLevel65:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.CoolLevel65_inline0
+  uiData: BTL.CoolLevel65UIData
+
+BTL.CoolLevel75:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.AddOnePerkPoint
+  uiData: BTL.GiveSinglePerkPointUIData
+
+BTL.CoolLevel85:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.AddFourPerkPoint
+  uiData: BTL.GiveFourPerkPointUIData
+
+BTL.CoolLevel100:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.CoolLevel100Bonus
+  uiData: BTL.CoolLevel100UIData
+
+BTL.CoolLevel120:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.CoolLevel120_inline0
+  uiData: BTL.CoolLevel120UIData
+
+BTL.CoolLevel150:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.Cool_150_inline0
+  uiData: BTL.CoolLevel150UIData

@@ -1,0 +1,50 @@
+BTL.AddOnePerkPoint:
+  $type: gamedataAddDevelopmentPointEffector_Record
+  amountOfPoints: 1
+  pointsType: Primary
+  effectorClassName: AddDevelopmentPointEffector
+  prereqRecord: Prereqs.AlwaysTruePrereq
+  removeAfterActionCall: False
+  removeAfterPrereqCheck: False
+  statModifierGroups: []
+
+BTL.GiveSinglePerkPointUIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  floatValues: []
+  intValues: [1]
+  loc_name_key: "LocKey#49579"
+  stats: []
+
+BTL.AddFourPerkPoint:
+  $type: gamedataAddDevelopmentPointEffector_Record
+  amountOfPoints: 4
+  pointsType: Primary
+  effectorClassName: AddDevelopmentPointEffector
+  prereqRecord: Prereqs.AlwaysTruePrereq
+  removeAfterActionCall: False
+  removeAfterPrereqCheck: False
+  statModifierGroups: []
+
+BTL.GiveFourPerkPointUIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  floatValues: []
+  intValues: [4]
+  loc_name_key: "LocKey#49579"
+  stats: []
+
+BTL.AddFourAttributePoint:
+  $type: gamedataAddDevelopmentPointEffector_Record
+  amountOfPoints: 4
+  pointsType: Attribute
+  effectorClassName: AddDevelopmentPointEffector
+  prereqRecord: Prereqs.AlwaysTruePrereq
+  removeAfterActionCall: False
+  removeAfterPrereqCheck: False
+  statModifierGroups: []
+
+BTL.AddFourAttributePointUIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  floatValues: []
+  intValues: [4]
+  loc_name_key: LocKey("BTL_Add_Attribute_Point")
+  stats: []

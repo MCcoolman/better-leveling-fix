@@ -1,0 +1,28 @@
+BTL.ReflexesLevel65:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.ReflexesLevel65Bonus
+  uiData: BTL.ReflexesLevel65UIData
+
+BTL.ReflexesLevel75:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.AddFourPerkPoint
+  uiData: BTL.GiveFourPerkPointUIData
+
+BTL.ReflexesLevel85:
+  $type: gamedataPassiveProficiencyBonus_Record
+  uiData: BTL.ReflexesLevel85UIData
+
+BTL.ReflexesLevel100:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.AddFourAttributePoint
+  uiData: BTL.AddFourAttributePointUIData
+
+BTL.ReflexesLevel120:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.ReflexesLevel120Bonus
+  uiData: BTL.ReflexesLevel120UIData
+
+BTL.ReflexesLevel150:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.ReflexesLevel150Bonus
+  uiData: BTL.ReflexesLevel150UIData

@@ -1,0 +1,93 @@
+BTL.CoolLevel65_inline0:
+  $type: gamedataEffector_Record
+  effectorClassName: ModifyDamageEffector
+  prereqRecord: Proficiencies.Cool_10_inline1
+  removeAfterActionCall: False
+  removeAfterPrereqCheck: False
+  statModifierGroups: []
+  operationType: Multiply
+  value: 2.5
+
+BTL.CoolLevel65UIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  floatValues: []
+  intValues: 
+  - 25
+  loc_name_key: LocKey("Cool_Level_65_Bonus")
+  stats: []
+
+BTL.CoolLevel100Bonus:
+  $type: gamedataApplyStatGroupEffector_Record
+  applicationTarget: Player
+  statGroup:
+    statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.HeadshotDamageMultiplier
+      modifierType: Additive
+      value: 0.3
+
+BTL.CoolLevel100UIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  floatValues: []
+  intValues: 
+  - 50
+  - 30
+  - 100
+  loc_name_key: LocKey("Cool_Level_100_Bonus")
+  stats: []
+
+BTL.CoolLevel120_inline0:
+  $base: Proficiencies.Cool_50_inline0
+  statGroup: BTL.CoolLevel120_inline1
+
+BTL.CoolLevel120_inline1:
+  $type: gamedataStatModifierGroup_Record
+  drawBasedOnStatType: False
+  optimiseCombinedModifiers: False
+  saveBasedOnStatType: False
+  statModsLimit: -1
+  relatedModifierGroups: []
+  statModifiers:
+    - BTL.CoolLevel120_inline2
+
+BTL.CoolLevel120_inline2:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.5
+  modifierType: AdditiveMultiplier
+  statType: BaseStats.MaxSpeed
+
+BTL.CoolLevel120UIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  floatValues: []
+  intValues: 
+  - 50
+  loc_name_key: LocKey("Cool_Level_120_Bonus")
+  stats: []
+
+BTL.Cool_150_inline0:
+  $type: gamedataModifyStatPoolValueEffector_Record
+  setValue: False
+  usePercent: True
+  effectorClassName: ModifyStatPoolValueEffector
+  prereqRecord: Proficiencies.Cool_60_inline1
+  removeAfterActionCall: False
+  removeAfterPrereqCheck: False
+  statPoolUpdates:
+    - BTL.Cool_150_inline15
+  statModifierGroups: []
+
+BTL.Cool_150_inline15:
+  $type: gamedataStatPoolUpdate_Record
+  statPoolType: BaseStatPools.OpticalCamoCharges
+  statPoolValue: 75
+
+BTL.CoolLevel150UIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  floatValues: []
+  intValues: 
+  - 75
+  - 15
+  - 200
+  - 120
+  loc_name_key: LocKey("Cool_Level_150_Bonus")
+  stats: []

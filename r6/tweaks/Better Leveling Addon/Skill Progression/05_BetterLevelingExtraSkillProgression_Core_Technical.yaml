@@ -1,0 +1,126 @@
+BTL.TechnicalLevel65Bonus:
+  $type: gamedataApplyStatGroupEffector_Record
+  applicationTarget: Player
+  statGroup:
+    statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.Armor
+      modifierType: Additive
+      value: 150.0
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.Humanity
+      modifierType: Additive
+      value: 50
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.GrenadeExplosionBonusRange
+      modifierType: Additive
+      value: 0.2
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.GrenadeExplosionBonusDamage
+      modifierType: Additive
+      value: 0.2
+
+BTL.TechnicalLevel65UIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  floatValues: []
+  intValues:
+    - 150
+    - 50
+    - 20
+  loc_name_key: LocKey("Technical_Level_65_Bonus")
+  stats:
+    - BaseStats.Armor
+    - BaseStats.Humanity
+    - BaseStats.GrenadeExplosionBonusRange
+
+BTL.TechnicalLevel75Bonus:
+  $type: gamedataApplyStatGroupEffector_Record
+  applicationTarget: Player
+  statGroup:
+    statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.InhalerBaseHealing
+      modifierType: AdditiveMultiplier
+      value: 15.0
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.InjectorBaseOverTheTimeHealing
+      modifierType: AdditiveMultiplier
+      value: 15.0
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.InjectorBaseHealing
+      modifierType: AdditiveMultiplier
+      value: 15.0
+
+BTL.TechnicalLevel75UIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  floatValues: []
+  intValues:
+    - 15
+    - 15
+  loc_name_key: LocKey("Technical_Level_75_Bonus")
+
+BTL.TechnicalLevel100Bonus:
+  $type: gamedataApplyStatGroupEffector_Record
+  applicationTarget: Player
+  statGroup:
+    statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.SecondaryModifiersAdditiveMultiplier
+      modifierType: Additive
+      value: 0.70
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.Humanity
+      modifierType: Additive
+      value: 150
+
+BTL.TechnicalLevel100UIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  floatValues:
+    - 70
+  intValues:
+    - 150
+  loc_name_key: LocKey("Technical_Level_100_Bonus")
+
+BTL.TechnicalLevel150Bonus:
+  $type: gamedataApplyStatGroupEffector_Record
+  applicationTarget: Player
+  statGroup:
+    statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.CraftingCostReduction
+      modifierType: Additive
+      value: 0.50
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.UpgradingCostReduction
+      modifierType: Additive
+      value: 0.50
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.CraftingMaterialRetrieveChance
+      modifierType: Additive
+      value: 0.50
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.UpgradingMaterialRetrieveChance
+      modifierType: Additive
+      value: 0.50
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.DisassemblingIngredientsDoubleBonus
+      modifierType: Additive
+      value: 1.0
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.DisassemblingMaterialQualityObtainChance
+      modifierType: Additive
+      value: 0.50
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.SecondaryModifiersAdditiveMultiplier
+      modifierType: Additive
+      value: 2.5
+
+BTL.TechnicalLevel150UIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  floatValues:
+    - 250
+  intValues:
+    - 50
+    - 100
+  loc_name_key: LocKey("Technical_Level_150_Bonus")
+

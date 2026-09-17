@@ -1,0 +1,29 @@
+BTL.IntelligenceLevel65:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.AddFourAttributePoint
+  uiData: BTL.AddFourAttributePointUIData
+
+BTL.IntelligenceLevel75:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.IntelligenceLevel75Bonus
+  uiData: BTL.IntelligenceLevel75UIData
+
+BTL.IntelligenceLevel85:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.IntelligenceLevel85Bonus
+  uiData: BTL.IntelligenceLevel85UIData
+
+BTL.IntelligenceLevel100:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.IntelligenceLevel100Bonus
+  uiData: BTL.IntelligenceLevel100UIData
+
+BTL.IntelligenceLevel120:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.IntelligenceLevel120Bonus
+  uiData: BTL.IntelligenceLevel120UIData
+
+BTL.IntelligenceLevel150:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.IntelligenceLevel150Bonus
+  uiData: BTL.IntelligenceLevel150UIData

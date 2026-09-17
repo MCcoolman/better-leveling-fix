@@ -1,0 +1,29 @@
+BTL.TechnicalLevel65:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.TechnicalLevel65Bonus
+  uiData: BTL.TechnicalLevel65UIData
+
+BTL.TechnicalLevel75:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.TechnicalLevel75Bonus
+  uiData: BTL.TechnicalLevel75UIData
+
+BTL.TechnicalLevel85:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.AddFourPerkPoint
+  uiData: BTL.GiveFourPerkPointUIData
+
+BTL.TechnicalLevel100:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.TechnicalLevel100Bonus
+  uiData: BTL.TechnicalLevel100UIData
+
+BTL.TechnicalLevel120:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.AddFourPerkPoint
+  uiData: BTL.GiveFourPerkPointUIData
+
+BTL.TechnicalLevel150:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.TechnicalLevel150Bonus
+  uiData: BTL.TechnicalLevel150UIData

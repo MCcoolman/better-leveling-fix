@@ -1,0 +1,28 @@
+BTL.StrengthLevel65:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.StrengthLevel65Bonus
+  uiData: BTL.StrengthLevel65UIData
+
+BTL.StrengthLevel75:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.AddOnePerkPoint
+  uiData: BTL.GiveSinglePerkPointUIData
+
+BTL.StrengthLevel85:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.AddFourPerkPoint
+  uiData: BTL.GiveFourPerkPointUIData
+
+BTL.StrengthLevel100:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.StrengthLevel100Bonus
+  uiData: BTL.StrengthLevel100UIData
+
+BTL.StrengthLevel120:
+  $type: gamedataPassiveProficiencyBonus_Record
+  effectorToTrigger: BTL.StrengthLevel120Bonus
+  uiData: BTL.StrengthLevel120UIData
+
+BTL.StrengthLevel150:
+  $type: gamedataPassiveProficiencyBonus_Record
+  uiData: BTL.StrengthLevel150UIData

@@ -1,0 +1,190 @@
+BTL.IntelligenceLevel75Bonus:
+  $type: gamedataApplyStatGroupEffector_Record
+  applicationTarget: Weapon
+  effectorClassName: ApplyStatGroupEffector
+  prereqRecord: Prereqs.SmartWeaponHeldPrereq
+  removeAfterActionCall: False
+  removeAfterPrereqCheck: False
+  removeWithEffector: True
+  statGroup: BTL.IntelligenceLevel75_inline0
+  reapplyOnWeaponChange: False
+
+BTL.IntelligenceLevel75_inline0:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - BTL.IntelligenceLevel75EffectiveRange
+    - BTL.IntelligenceLevel75BaseDamage
+    - BTL.IntelligenceLevel75SmartGunHitProbability
+    - BTL.IntelligenceLevel75SmartGunAdsTimeToLock
+    - BTL.IntelligenceLevel75ReloadTimeBonus
+
+BTL.IntelligenceLevel75EffectiveRange:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.80
+  modifierType: Multiplier
+  statType: BaseStats.EffectiveRange
+
+BTL.IntelligenceLevel75BaseDamage:
+  $type: gamedataConstantStatModifier_Record
+  value: 1.5
+  modifierType: AdditiveMultiplier
+  statType: BaseStats.BaseDamage
+
+BTL.IntelligenceLevel75SmartGunHitProbability:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.5
+  modifierType: AdditiveMultiplier
+  statType: BaseStats.SmartGunHitProbability
+
+BTL.IntelligenceLevel75SmartGunAdsTimeToLock:
+  $type: gamedataConstantStatModifier_Record
+  value: -20.0
+  modifierType: Additive
+  statType: BaseStats.SmartGunAdsTimeToLock
+
+BTL.IntelligenceLevel75ReloadTimeBonus:
+  $type: gamedataConstantStatModifier_Record
+  value: -20.0
+  modifierType: Additive
+  statType: BaseStats.ReloadTimeBonus
+
+BTL.IntelligenceLevel75UIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  intValues: 
+  - 80
+  - 150
+  - 50
+  - 20
+  loc_name_key: LocKey("Intelligence_Level_75_Bonus")
+
+BTL.IntelligenceLevel85Bonus:
+  $type: gamedataApplyStatGroupEffector_Record
+  applicationTarget: Player
+  effectorClassName: ApplyStatGroupEffector
+  removeWithEffector: True
+  statGroup: BTL.IntelligenceLevel85_inline0
+
+BTL.IntelligenceLevel85_inline0:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.Memory
+      modifierType: Additive
+      value: 10
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.MemoryRegenRateMult
+      modifierType: Additive
+      value: 0.9
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.DeviceMemoryCostReductionMult
+      modifierType: Additive
+      value: 0.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.DurationBonusControlQuickhack
+      modifierType: Additive
+      value: 0.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.DurationBonusCovertQuickhack
+      modifierType: Additive
+      value: 0.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.BonusQuickHackDamage
+      modifierType: Additive
+      value: 1.5
+
+BTL.IntelligenceLevel85UIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  intValues: 
+  - 10
+  - 9
+  - 50
+  - 150
+  loc_name_key: LocKey("Intelligence_Level_85_Bonus")
+
+BTL.IntelligenceLevel100Bonus:
+  $type: gamedataApplyStatGroupEffector_Record
+  applicationTarget: Player
+  effectorClassName: ApplyStatGroupEffector
+  removeWithEffector: True
+  statGroup: BTL.IntelligenceLevel100_inline0
+
+BTL.IntelligenceLevel100_inline0:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.QuickhackDamageBonusMultiplier
+      modifierType: Additive
+      value: 0.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.MemoryRegenRateMult
+      modifierType: Additive
+      value: 1.5
+
+BTL.IntelligenceLevel100UIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  intValues: 
+  - 50
+  - 15
+  loc_name_key: LocKey("Intelligence_Level_100_Bonus")
+
+BTL.IntelligenceLevel120Bonus:
+  $type: gamedataApplyStatGroupEffector_Record
+  applicationTarget: Weapon
+  effectorClassName: ApplyStatGroupEffector
+  prereqRecord: Prereqs.NanoWiresHeldPrereq
+  removeWithEffector: True
+  statGroup: BTL.IntelligenceLevel120_inline0
+
+BTL.IntelligenceLevel120_inline0:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.DPS
+      modifierType: Additive
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.AttackSpeed
+      modifierType: Additive
+      value: 1.5
+
+BTL.IntelligenceLevel120UIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  intValues: 
+  - 150
+  loc_name_key: LocKey("Intelligence_Level_120_Bonus")
+
+BTL.IntelligenceLevel150Bonus:
+  $type: gamedataApplyStatGroupEffector_Record
+  applicationTarget: Player
+  effectorClassName: ApplyStatGroupEffector
+  removeWithEffector: True
+  statGroup: BTL.IntelligenceLevel150_inline0
+
+BTL.IntelligenceLevel150_inline0:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.DamageQuickHackMemoryCostReduction
+      modifierType: Additive
+      value: 1
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.QuickhackDamageBonusMultiplier
+      modifierType: Additive
+      value: 2.0
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.MemoryRegenRateMult
+      modifierType: Additive
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.Memory
+      modifierType: Additive
+      value: 20
+
+BTL.IntelligenceLevel150UIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  intValues: 
+  - 10
+  - 200
+  - 15  
+  - 20
+  loc_name_key: LocKey("Intelligence_Level_150_Bonus")

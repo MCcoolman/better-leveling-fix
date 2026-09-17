@@ -1,0 +1,87 @@
+BTL.StrengthLevel65Bonus:
+  $type: gamedataApplyStatGroupEffector_Record
+  applicationTarget: Player
+  statGroup:
+    statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.Health
+      modifierType: Additive
+      value: 250.0
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.MeleeDamagePercentBonus
+      modifierType: Additive
+      value: 0.15
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.MeleeResistance
+      modifierType: Additive
+      value: 10.0
+
+BTL.StrengthLevel65UIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  floatValues: []
+  intValues: 
+  - 250
+  - 15
+  - 10
+  loc_name_key: LocKey("Strength_Level_65_Bonus")
+  stats: []
+
+BTL.StrengthLevel100Bonus:
+  $type: gamedataApplyStatGroupEffector_Record
+  applicationTarget: Player
+  statGroup:
+    statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.AllDamageDonePercentBonus
+      modifierType: Additive
+      value: 3.0
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.MeleeDamagePercentBonus
+      modifierType: Additive
+      value: 0.15
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.FallDamageReduction
+      modifierType: Additive
+      value: 0.40
+
+BTL.StrengthLevel100UIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  floatValues: []
+  intValues: 
+  - 30
+  - 15
+  - 40
+  loc_name_key: LocKey("Strength_Level_100_Bonus")
+  stats: []
+
+BTL.StrengthLevel120Bonus:
+  $type: gamedataEffector_Record
+  effectorClassName: ModifyDamageEffector
+  prereqRecord: BTL.StrengthLevel120_inline0
+  removeAfterActionCall: False
+  removeAfterPrereqCheck: False
+  statModifierGroups: []
+  operationType: Multiply
+  value: 1.50
+
+BTL.StrengthLevel120_inline0:
+  $type: gamedataMultiPrereq_Record
+  aggregationType: OR
+  prereqClassName: gameMultiPrereq
+  nestedPrereqs:
+    - Perks.IsHitStrongAttack
+    - Perks.IsHitQuickMelee
+
+BTL.StrengthLevel120UIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  floatValues: []
+  intValues: 
+  - 50
+  - 15
+  loc_name_key: LocKey("Strength_Level_120_Bonus")
+  stats: []
+
+BTL.StrengthLevel150UIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  loc_name_key: LocKey("Strength_Level_150_Bonus")
+

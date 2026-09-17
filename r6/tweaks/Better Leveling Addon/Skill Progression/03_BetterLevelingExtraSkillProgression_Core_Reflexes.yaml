@@ -1,0 +1,143 @@
+BTL.ReflexesLevel65Bonus:
+  $type: gamedataApplyStatusEffectEffector_Record
+  applicationTarget: Player
+  count: 1
+  instigator: ''
+  inverted: False
+  removeWithEffector: False
+  statusEffect: BaseStatusEffect.Reflexes_20_Accuracy_Buff
+  useCountWhenRemoving: False
+  effectorClassName: ApplyStatusEffectEffector
+  prereqRecord: Perks.IsPlayerDodging
+  removeAfterActionCall: False
+  removeAfterPrereqCheck: False
+  statModifierGroups:
+    - BTL.ReflexesLevel65_inline0
+
+BTL.ReflexesLevel65_inline0:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.MaxSpeed
+      modifierType: AdditiveMultiplier
+      value: 0.10
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.DodgeStaminaCostReduction
+      modifierType: AdditiveMultiplier
+      value: 0.50
+
+BTL.ReflexesLevel65UIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  floatValues: []
+  intValues: 
+  - 10
+  - 50
+  loc_name_key: LocKey("Reflexes_Level_65_Bonus")
+
+BTL.ReflexesLevel85UIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  floatValues: []
+  intValues: 
+  - 1
+  - 50
+  loc_name_key: LocKey("Reflexes_Level_85_Bonus")
+
+BTL.ReflexesLevel120Bonus:
+  $type: gamedataApplyStatGroupEffector_Record
+  applicationTarget: Weapon
+  effectorClassName: ApplyStatGroupEffector
+  prereqRecord: Perks.IsPlayerInAir
+  removeAfterActionCall: False
+  removeAfterPrereqCheck: False
+  removeWithEffector: True
+  statGroup: BTL.ReflexesLevel120_inline0
+  reapplyOnWeaponChange: False
+
+BTL.ReflexesLevel120_inline0:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - BTL.ReflexesLevel120CritChance
+    - BTL.ReflexesLevel120CritDamage
+    - BTL.ReflexesLevel120ReloadTimeBonus
+    - BTL.ReflexesLevel120BaseDamage
+    - BTL.ReflexesLevel120HeadshotDamageMultiplier
+
+BTL.ReflexesLevel120CritChance:
+  $type: gamedataConstantStatModifier_Record
+  value: 100
+  modifierType: Additive
+  statType: BaseStats.CritChance
+
+BTL.ReflexesLevel120CritDamage:
+  $type: gamedataConstantStatModifier_Record
+  value: 100
+  modifierType: Additive
+  statType: BaseStats.CritDamage
+
+BTL.ReflexesLevel120ReloadTimeBonus:
+  $type: gamedataConstantStatModifier_Record
+  value: -40.0
+  modifierType: Additive
+  statType: BaseStats.ReloadTimeBonus
+
+BTL.ReflexesLevel120BaseDamage:
+  $type: gamedataConstantStatModifier_Record
+  value: 1.0
+  modifierType: AdditiveMultiplier
+  statType: BaseStats.BaseDamage
+
+BTL.ReflexesLevel120HeadshotDamageMultiplier:
+  $type: gamedataConstantStatModifier_Record
+  value: 0.5
+  modifierType: AdditiveMultiplier
+  statType: BaseStats.HeadshotDamageMultiplier
+
+BTL.ReflexesLevel120UIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  floatValues:
+  - 100
+  - 50
+  intValues: 
+  - 100
+  - 40
+  loc_name_key: LocKey("Reflexes_Level_120_Bonus")
+
+BTL.ReflexesLevel150Bonus:
+  $type: gamedataApplyStatGroupEffector_Record
+  applicationTarget: Player
+  effectorClassName: ApplyStatGroupEffector
+  prereqRecord: BTL.ReflexesLevel150_inline1
+  removeAfterActionCall: False
+  removeAfterPrereqCheck: False
+  removeWithEffector: True
+  statGroup: BTL.ReflexesLevel150_inline0
+
+BTL.ReflexesLevel150_inline1:
+  $type: gamedataMultiPrereq_Record
+  aggregationType: OR
+  prereqClassName: gameMultiPrereq
+  nestedPrereqs:
+    - Items.AdvancedSandevistanApogee_inline6
+
+BTL.ReflexesLevel150_inline0:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.MaxSpeed
+      modifierType: Additive
+      value: 1.5
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.Health
+      modifierType: Additive
+      value: 400
+    - $type: gamedataConstantStatModifier_Record
+      statType: BaseStats.Stamina
+      modifierType: Additive
+      value: 400
+
+BTL.ReflexesLevel150UIData:
+  $type: gamedataPassiveProficiencyBonusUIData_Record
+  intValues: 
+  - 150
+  - 400
+  loc_name_key: LocKey("Reflexes_Level_150_Bonus")
