@@ -1,0 +1,38 @@
+{
+    "XPValues": {
+        "Headhunter": 1,
+        "Netrunner": 1,
+        "Shinobi": 1,
+        "Solo": 1,
+        "Engineer": 1,
+        "Level": 1,
+        "StreetCred": 1
+    },
+    "AttrPointsPerLevel": 1,
+    "PerkPointsPerLevel": 1,
+    "MoreCyberwareCapacity": 6,
+    "CyberwareCap": 1000,
+    "NewLevelCap": 300,
+    "StreetCredCap": 500,
+    "StartingAttributePoints": 12,
+    "MaxStartingAttribute": 8,
+    "AttributeCap": 40,
+    "Language": 1,
+    "FeatureFlags": {
+        "RemoveLevelProgressionCap": true,
+        "RemoveAttributeProgressionCap": true,
+        "BeyondLevel60Curve": true,
+        "BeyondStreetCredCurve": true,
+        "ExtendSkillProgression": true,
+        "CyberwareCap": true,
+        "AttributeCap": true,
+        "StreetCredCap": true,
+        "LevelCap": true,
+        "StartingAttr": true,
+        "CyberwareScaling": true,
+        "MoreAttrPerLevel": true,
+        "MorePerkPerLevel": true,
+        "XPMultiplier": true
+    },
+    "SkillProgressionCap": 150
+}
